@@ -1,0 +1,27 @@
+<% include partials/header.ejs %>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-8">
+				<h3>Login Using The Form Below...</h3>
+					<h6 class="alert alert-success"><%= typeof msg != 'undefined' ? msg : '' %></h6>
+				<form action="/login" method="POST">
+					<div>
+						<label>EMAIL:</label>
+						<input type="email" name="email" class="form-control" required="">
+					</div>
+					<div>
+						<label>PASSWORD:</label>
+						<input type="password" name="password" class="form-control" required="">
+					</div>
+					<div>
+						<label>CONFIRM PASSWORD:</label>
+						<input type="password" name="confpassword" class="form-control" required="">
+					</div><br>
+					<div>
+						<input type="submit" name="submit" class="btn btn-info" value="Login" required="">
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+<% include partials/footer.ejs%>

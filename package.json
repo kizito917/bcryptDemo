@@ -1,0 +1,11 @@
+{
+  "name": "bcryptdemo",
+  "version": "1.0.0",
+  "description": "a simple password bcryprion app",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kizito917",
+  "license": "ISC"
+}
